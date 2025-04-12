@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+</head>
+<body>
+  <h1>My To-Do List</h1>
+  <ul id="todo-list"></ul>
+
+  <script>
+    fetch('http://backend-service:5000/api/todos')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('todo-list');
+        data.forEach(todo => {
+          const item = document.createElement('li');
+          item.textContent = todo.title;
+          list.appendChild(item);
+        });
+      });
+  </script>
+</body>
+</html>
