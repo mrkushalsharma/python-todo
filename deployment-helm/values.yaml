@@ -1,7 +1,0 @@
-backend:
-  image: mrkushalsharma/todo-backend:v0
-  port: 5000
-
-frontend:
-  image: mrkushalsharma/todo-frontend:v0
-  port: 80

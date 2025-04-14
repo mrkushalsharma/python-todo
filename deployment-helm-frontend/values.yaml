@@ -1,0 +1,3 @@
+frontend:
+  image: mrkushalsharma/todo-frontend:v0
+  port: 80
