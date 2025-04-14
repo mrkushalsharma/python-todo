@@ -9,7 +9,7 @@
   <ul id="todo-list"></ul>
 
   <script>
-    fetch('http://backend-service:5000/api/todos')
+    fetch('http://localhost:5000/api/todos')
       .then(response => response.json())
       .then(data => {
         const list = document.getElementById('todo-list');

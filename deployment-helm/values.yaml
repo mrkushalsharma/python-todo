@@ -1,12 +1,7 @@
-mariadb:
-  image: mariadb
-  rootPassword: mypassword
-  storage: 1Gi
-
 backend:
-  image: yourdockerhub/backend:latest
+  image: mrkushalsharma/todo-backend:v0
   port: 5000
 
 frontend:
-  image: yourdockerhub/frontend:latest
+  image: mrkushalsharma/todo-frontend:v0
   port: 80
